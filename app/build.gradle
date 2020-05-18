@@ -49,6 +49,7 @@ android {
 
 dependencies {
     def nav_version = "2.3.0-alpha06"
+    def materialVersion = "1.2.0-alpha06"
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     // Kotlin
@@ -72,4 +73,7 @@ dependencies {
 
     // Testing Navigation
     androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
+    // DrawerNavigator
+    implementation "com.google.android.material:material:$materialVersion"
 }
